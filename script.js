@@ -2,11 +2,6 @@ const body = document.body;
 const header = document.querySelector("[data-header]");
 const toggle = document.querySelector("[data-menu-toggle]");
 const nav = document.querySelector("[data-nav]");
-const ticker = document.querySelector(".ticker div");
-
-if (ticker) {
-  ticker.innerHTML += ticker.innerHTML;
-}
 
 const syncHeader = () => {
   header?.classList.toggle("is-scrolled", window.scrollY > 18);
