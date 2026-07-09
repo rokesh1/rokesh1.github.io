@@ -11,7 +11,7 @@
   --mint-soft: #e8f6ee;
   --coral-soft: #fff0e9;
   --shadow: 0 18px 45px rgba(21, 21, 21, 0.08);
-  --max: 1160px;
+  --max: 1080px;
 }
 
 * {
@@ -148,11 +148,11 @@ main {
 
 .hero {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) 340px;
-  gap: clamp(2rem, 5vw, 4rem);
+  grid-template-columns: minmax(0, 1fr) 320px;
+  gap: clamp(1.5rem, 4vw, 3rem);
   align-items: center;
-  min-height: calc(100svh - 78px);
-  padding-block: clamp(3rem, 8vw, 6rem);
+  min-height: auto;
+  padding-block: clamp(2.5rem, 6vw, 4.5rem);
 }
 
 .eyebrow {
@@ -172,11 +172,11 @@ p {
 }
 
 h1 {
-  max-width: 760px;
+  max-width: 680px;
   margin: 0;
-  font-size: clamp(3rem, 6.2vw, 5.2rem);
-  font-weight: 850;
-  line-height: 0.96;
+  font-size: clamp(2.4rem, 4.4vw, 3.9rem);
+  font-weight: 820;
+  line-height: 1.04;
   letter-spacing: 0;
 }
 
@@ -185,10 +185,10 @@ h1 span {
 }
 
 .hero-lede {
-  max-width: 680px;
-  margin: 1.4rem 0 0;
+  max-width: 620px;
+  margin: 1rem 0 0;
   color: var(--muted);
-  font-size: clamp(1.05rem, 1.7vw, 1.35rem);
+  font-size: clamp(1rem, 1.25vw, 1.15rem);
   line-height: 1.45;
 }
 
@@ -227,7 +227,7 @@ h1 span {
 
 .hero-portrait img {
   width: 100%;
-  height: 430px;
+  height: 380px;
   object-fit: cover;
   border: 1px solid var(--line);
   border-radius: 8px;
@@ -298,7 +298,7 @@ h1 span {
 }
 
 .section-pad {
-  padding-block: clamp(3rem, 7vw, 5rem);
+  padding-block: clamp(2.5rem, 5vw, 4rem);
 }
 
 .intro {
@@ -307,12 +307,12 @@ h1 span {
 }
 
 .intro p {
-  max-width: 920px;
+  max-width: 780px;
   margin: 0;
-  color: var(--ink);
-  font-size: clamp(1.45rem, 3vw, 2.6rem);
-  font-weight: 750;
-  line-height: 1.16;
+  color: var(--muted);
+  font-size: clamp(1rem, 1.2vw, 1.15rem);
+  font-weight: 500;
+  line-height: 1.7;
 }
 
 .section-heading {
@@ -323,11 +323,11 @@ h1 span {
 }
 
 .section-heading h2 {
-  max-width: 760px;
+  max-width: 680px;
   margin: 0;
-  font-size: clamp(1.65rem, 3.3vw, 2.85rem);
-  font-weight: 820;
-  line-height: 1.05;
+  font-size: clamp(1.35rem, 2.2vw, 2rem);
+  font-weight: 780;
+  line-height: 1.18;
 }
 
 .project-grid {
@@ -337,7 +337,7 @@ h1 span {
 }
 
 .project-card {
-  min-height: 280px;
+  min-height: 240px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -349,7 +349,7 @@ h1 span {
 }
 
 .project-card-large {
-  min-height: 280px;
+  min-height: 240px;
   background: var(--blue-soft);
 }
 
@@ -377,8 +377,8 @@ h1 span {
 
 .project-card h3 {
   margin: 0;
-  font-size: clamp(1.6rem, 3vw, 2.65rem);
-  line-height: 1.04;
+  font-size: clamp(1.25rem, 2vw, 1.75rem);
+  line-height: 1.15;
 }
 
 .project-card p:not(.project-kicker) {
@@ -431,11 +431,11 @@ h1 span {
 }
 
 .story-copy p {
-  max-width: 760px;
+  max-width: 720px;
   margin: 0 0 1rem;
   color: var(--muted);
-  font-size: clamp(1.05rem, 2vw, 1.28rem);
-  line-height: 1.55;
+  font-size: 1rem;
+  line-height: 1.65;
 }
 
 .stat-list {
@@ -453,8 +453,8 @@ h1 span {
 }
 
 .stat-list dt {
-  font-size: clamp(1.55rem, 3vw, 2.35rem);
-  font-weight: 820;
+  font-size: clamp(1.25rem, 2vw, 1.65rem);
+  font-weight: 780;
   line-height: 1.05;
 }
 
@@ -483,7 +483,7 @@ h1 span {
 }
 
 .process-steps article {
-  min-height: 190px;
+  min-height: 170px;
   display: flex;
   flex-direction: column;
   border: 1px solid var(--line);
@@ -499,9 +499,9 @@ h1 span {
 }
 
 .process-steps h3 {
-  margin: 2rem 0 0.5rem;
-  font-size: clamp(1.25rem, 2.2vw, 1.8rem);
-  line-height: 1.08;
+  margin: 1.5rem 0 0.5rem;
+  font-size: clamp(1.1rem, 1.8vw, 1.35rem);
+  line-height: 1.18;
 }
 
 .process-steps p {
@@ -519,11 +519,11 @@ h1 span {
 }
 
 .contact h2 {
-  max-width: 720px;
+  max-width: 640px;
   margin: 0;
-  font-size: clamp(1.85rem, 4vw, 3.4rem);
-  font-weight: 820;
-  line-height: 1.03;
+  font-size: clamp(1.5rem, 2.6vw, 2.25rem);
+  font-weight: 780;
+  line-height: 1.16;
 }
 
 .contact-panel {
@@ -660,7 +660,7 @@ h1 span {
   }
 
   h1 {
-    font-size: clamp(2.8rem, 15vw, 4rem);
+    font-size: clamp(2.2rem, 11vw, 3.2rem);
   }
 
   h1 span {
@@ -676,7 +676,7 @@ h1 span {
   }
 
   .hero-portrait img {
-    height: 360px;
+    height: 320px;
   }
 
   .hero-portrait figcaption {
@@ -686,7 +686,8 @@ h1 span {
   }
 
   .intro p {
-    font-size: 1.45rem;
+    font-size: 1rem;
+    line-height: 1.7;
   }
 
   .section-heading h2,
